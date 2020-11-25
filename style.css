@@ -131,7 +131,7 @@ body{
       }
       
       .btn {
-        background-color:lightblue ;
+        background-color:#AFCAE8 ;
         color: white;
         padding: 12px;
         margin: 10px 0;
@@ -207,7 +207,7 @@ button {
 
 
 button:hover {
-  opacity: 0.8;
+  background-color: black;
 }
 
 /* Extra styles for the cancel button */
