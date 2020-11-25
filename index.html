@@ -8,21 +8,48 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <nav>
-        <h1>Modular Cars</h1>  
-        <a href="http://">Design</a>
-        <a href="http://">Produkter</a>
-        <a href="http://">Kundeservice</a>
-    </nav>
-    <div class="icon">
-        <a href="#">
-            <img alt="Qries" src="kurv.png">
-    </div>
-    <div class="icon2">
-        <a href="#">
-            <img alt="Qries" src="profil.png">
-    </div>
-  </header>
+<div class="logo">
+<a href="#"><h1>MODULAR CARS</h1></a>
+</div>
+
+  <nav>
+      <a href="http://">Design</a>
+      <a href="http://">Produkter</a>
+      <a href="http://">Kundeservice</a>
+  </nav>
+
+  <div class="icon">
+  <a href="#"><img alt="Qries" src="kurv.png">
+  </div>
+  
+  
+  
+  <button class="knap" onclick="document.getElementById('id01').style.display='block'"><img src="profil.png"></button>
+<div id="id01" class="modal">
+<form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="profil.png" alt="Login" class="avatar">
+        </div>
+    
+<div class="container">
+<label for="uname"><b>Brugernavn</b></label>
+<input type="text" name="uname" required>
+<label for="psw"><b>Kodeord</b></label>
+<input type="password" name="psw" required>
+<button type="submit">Log ind</button>
+<label>
+<input type="checkbox" checked="checked" name="remember"> Husk mig
+</label>
+</div>
+    
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+  <span class="psw">Glemt kodeord?</a></span>
+</div>
+</form>
+</div>
+</header>
 <body>
     <div class="row">
       <div class="col-75">
@@ -51,7 +78,7 @@
                 </div>
               </div>
               <div class="col-50">
-                <h3>Betaling</h3>
+                <h3>Betaling og kortoplysninger</h3>
                 <label for="cname">Navn på kort</label>
                 <input type="text" id="cname" name="cardname">
                 <label for="ccnum">Kreditnummer</label>
@@ -86,6 +113,60 @@
         </div>
       </div>
     </div>
+<footer class="outer_footer">
+<div class="inner_footer">
 
+
+          <div class="footer_third">
+              <h2>Kontakt</h2>
+              <a href="#">Lyngvej 21<br>4600 Køge</a>
+              <a href="#">Telefon:<br>26110099</a>
+              <a href="#">Mail:<br>info@modularcars.dk</a>
+              <a href="#">Åbningstider:<br>Man - fre.<br>10:00 - 19:00</a>
+          </div>
+
+
+
+          <div class="footer_third">
+              <h2>Køb & finansiering</h2>
+              <a href="#">Privatleasing</a>
+              <a href="#">Erhvervsbeskatning</a>
+              <a href="#">Splitleasing</a>
+              <a href="#">Flexleasing</a>
+              <a href="#">Få et tilbud</a>
+          </div>
+
+
+
+          <div class="footer_third">
+              <h2>Samarbejdspartnere</h2>
+              <a href="#">Bang og Olufsen</a>
+              <a href="#">Bose</a>
+              <a href="#">Danske Bank</a>
+              <a href="#">Maha Energy</a>
+              <a href="#">Kongsberg</a>
+          </div>
+
+          <div class="footer_third">
+              <h2>Oplev en Modular Car</h2>
+              <a href="#">Oversigt</a>
+              <a href="#">Experience drivers</a>
+              <a href="#">Prøvetur</a>
+              <a class="text" href="#">Innovation & teknologi</a>
+              <a href="#">Innovation lab</a>
+          </div>
+
+          <div class="footer_fouth">
+              <h2>Sociale medier</h2>
+              <a href="#"><img src="facebook_ny.jpeg"></a>
+              <a href="#"><img src="instagram_ny.jpeg"></a>
+              <a href="#"><img src="youtube_ny.jpeg"></a>
+              <a class="text" href="#">Trustpilot</a>
+              <a href="#"><img src="trustpilot_ny.jpeg"></a>
+          </div>
+
+      </div>
+
+  </footer>
 </body>
 </html>
