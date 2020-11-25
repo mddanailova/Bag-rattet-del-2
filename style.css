@@ -1,0 +1,88 @@
+body {
+  margin: 0 ;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fire {
+  display: flex;
+  text-align: center;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 3px;
+}
+
+.header {
+display: flex;
+background-color: rgba(92, 95, 83, 0.8);
+height: 4.5em;
+}
+
+.logo {
+  flex: 20%;
+
+}
+h1 {
+  text-align: center;
+  color: #AFCAE8;
+  text-decoration: none;
+  margin-top: 0.4em;
+}
+
+.nav {
+  flex: 60%;
+  text-align: center;
+  margin: 1.2em;
+
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #AFCAE8;
+    font-weight: bold;
+    padding: 2em;
+}
+
+nav a:hover {
+    color: black;
+  }
+
+.icon{
+  flex: 5%;
+  padding-top: 0.7em;
+}
+
+.icon img {
+  height: 3em;
+}
+
+.icon2{
+  flex: 5%;
+  padding-top: 0.7em;
+}
+
+.icon2 img {
+  height: 3em;
+}
+
+.myButton {
+  background-color: #AFCAE8;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+  margin-bottom: 2em;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background-color:rgba(92, 95, 83, 0.8);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
