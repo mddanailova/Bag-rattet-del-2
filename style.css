@@ -95,3 +95,148 @@ nav a:hover {
 .myButton:active {
 	top:1px;
 }
+
+.outer_footer {
+    display: block;
+    overflow: hidden;/*vi vil "float" elementer indeni footeren. Så vi sætter den til hidden i den outer footer. Så dokumentet ikke "kolapser"*/
+    padding-top: 70px;/*padding på top og bund af ydre footer. Ingen på højre/ venstre.*/
+    box-sizing: border-box; /*inkludere padding og margin til totale udregning af firkanten. Så det IKKE bliver 100% + 70px.*/
+    background-color: rgba(92, 95, 83, 1);/*baggrundsfarve for footer*/
+}
+
+.inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+
+
+.inner_footer .footer_third {
+    width: calc(20% - 1px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child {
+    margin-right: 0;
+}
+
+.inner_footer .footer_third h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #afcae8;
+}
+
+.inner_footer .footer_third a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 200px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    list-style: none;
+    text-decoration: none;
+    color: #afcae8;
+}
+
+
+.inner_footer .footer_third li {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.inner_footer .footer_third .text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+/*-------start-------*/
+
+
+.inner_footer .footer_fouth {
+    width: calc(17% - 5px);
+    margin-right: 50px;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.inner_footer .footer_fouth:last-child {
+    margin-right: 0;
+}
+
+.inner_footer .footer_fouth h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #afcae8;
+}
+
+.inner_footer .footer_fouth a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 200px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #afcae8;
+    text-decoration: none;
+}
+
+.inner_footer .footer_fouth .text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+.inner_footer .footer_fouth a img{
+   width: 17%;
+   height: auto;
+   border-radius: 15px;
+   display: block;
+}
+
+
+@media (min-width: 600px) {
+    .inner_footer .footer_fouth img {
+        width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .outer_footer .inner_footer {
+        width: 90%;
+    }
+    .inner_footer .footer_third {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .inner_footer .footer_fouth {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+}
