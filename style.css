@@ -65,6 +65,7 @@ nav a:hover {
 .to {
   display: flex;
   margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .column {
