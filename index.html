@@ -14,6 +14,57 @@
 </head>
 
 <body>
+<!--Header-->
+
+
+
+<header class="header">
+    <div class="logo">
+    <h1>MODULAR CARS</h1>
+  </div>
+  <div class="nav">
+    <nav>
+        <a href="http://">Design</a>
+        <a href="http://">Produkter</a>
+        <a href="http://">Kundeservice</a>
+    </nav>
+  </div>
+    <div class="icon">
+        <a href="#">
+            <img alt="Qries" src="./billeder/kurv.png">
+    </div>
+    <button class="knap" onclick="document.getElementById('id01').style.display='block'"><img src="./billeder/profil.png"></button>
+<div id="id01" class="modal">
+<form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="./billeder/profil.png" alt="Login" class="avatar">
+      </div>
+
+<div class="container">
+<label for="uname"><b>Brugernavn</b></label>
+<input type="text" name="uname" required>
+<label for="psw"><b>Kodeord</b></label>
+<input type="password" name="psw" required>
+<button type="submit">Log ind</button>
+<label>
+<input type="checkbox" checked="checked" name="remember"> Husk mig
+</label>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+<span class="psw">Glemt kodeord?</a></span>
+
+  </header>
+
+
+
+
+
+
+<!--DESIGNSIDE-->
+
 
 
     <div class="designbillede">
@@ -22,7 +73,7 @@
 
 
 
-    <div class="container">
+    <div class="designcontainer">
       <div class="slider-outer">
         <img src="./billeder/arrow_left.png" class="prev" alt="Prev">
         <div class="slider-inner">
