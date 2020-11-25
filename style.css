@@ -213,7 +213,7 @@ h3{
   
   
   
-  .inner_footer .footer_fouth a img{
+  .inner_footer .footer_fouth a img {
    width: 17%;
    height: auto;
    border-radius: 15px;
@@ -223,7 +223,8 @@ h3{
   
   @media (min-width: 600px) {
     .inner_footer .footer_fouth img {
-        width: 20%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
     }
+}
