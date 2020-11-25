@@ -24,10 +24,29 @@
         <a href="#">
             <img alt="Qries" src="kurv.png">
     </div>
-    <div class="icon2">
-        <a href="#">
-            <img alt="Qries" src="profil.png">
+    <button class="knap" onclick="document.getElementById('id01').style.display='block'"><img src="profil.png"></button>
+    <div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="profil.png" alt="Login" class="avatar">
+            </div>
+
+    <div class="container">
+    <label for="uname"><b>Brugernavn</b></label>
+    <input type="text" name="uname" required>
+    <label for="psw"><b>Kodeord</b></label>
+    <input type="password" name="psw" required>
+    <button type="submit">Log ind</button>
+    <label>
+    <input type="checkbox" checked="checked" name="remember"> Husk mig
+    </label>
     </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Glemt kodeord?</a></span>
+
   </header>
 <body>
 <h1> Vores Produkter<h1>
