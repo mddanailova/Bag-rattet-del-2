@@ -6,10 +6,6 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
-}
-
 
 a{
 	color:#fff;
@@ -21,15 +17,107 @@ a{
 
 
 
+/*Forsøg 3*/
+
+
+div.gallery {
+  
+}
+
+
+
+div.gallery img {
+  width: 50%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.desc p {
+  border: solid;
+  padding: 6px 0px;
+  font-weight: bold;
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+}
+
+.responsive:hover {
+  border: solid, 1px;
+}
+
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container_design {
+  background-color: rgba(92, 95, 83, 1);
+  content: "";
+  clear: both;
+  display: table;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18rem;
+}
+
+
+.designbilledeboks {
+  margin: 1rem 0rem;
+  max-width: 80%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+
+.designlandrover{
+  max-width: 80%; /*hjulet bliver kun mindre men aldrig større end angivet i dens pixel width*/
+  height: auto; /*height ændrer sig automatisk efter width værdien*/
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
 /*---------Designside----------*/
 
+/*
 
 .designcontainer{
-    margin:40px auto;
-	overflow:auto;
+  margin:40px auto;
+  overflow:auto;
+  margin-left: 400px;
 }
 
 .slider-inner{
@@ -37,8 +125,8 @@ a{
 	position:relative;
 	overflow:hidden;
 	float:left;
-    border:#666 solid 1px;
-    background-color:rgba(92, 95, 83, 0.8);
+  border:#666 solid 1px;
+  background-color:rgba(92, 95, 83, 0.8);
 }
 
 .slider-inner img{
@@ -52,12 +140,11 @@ a{
     width: 20%;
     height: auto;
     padding: 5px;
-    border-radius: 100px;
 }
 
 .prev,.next{
 	float:left;
-    margin-top: 5%;
+  margin-top: 5%;
 	cursor: pointer;
 }
 
@@ -81,31 +168,49 @@ a{
     margin-top: 1em;
 }
 
-h3{
-    text-align: center;
-    border-style: solid;
-    color: #afcae8;
-    width: 60px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 30px;
-    padding: 2px;
-    font-weight: normal;
-}
 
-
-
-.tekstunder {
-    display: inline-flex;
-    margin-left: 52px
-    
-}
 
 .designlandrover {
-    display: block;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
 }
+
+
+/*
+.tekstunder {
+    display: inline-flex;
+    margin-left: 52px  
+}
+
+
+.tekstunder2 {
+  width: 500px;
+  margin-left: 130px;
+}
+
+.tekstunder2 li {
+  display: inline-block;
+  
+}
+
+.tekstunder2 li p{
+  text-align: center;
+  border-style: solid;
+  color: #afcae8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px 30px;
+  font-weight: normal;
+}
+*/
+
+
+
+
+
+
 
 
 
@@ -274,10 +379,12 @@ h3{
       font-style: bold;
     }
     
+    /*DEAKTIVERET PÅVIRKEDE INGEN ELEMENTER
     p {
       text-align: justify;
       width: 90%;
     }
+    */
     
     .nav {
       flex: 60%;
@@ -469,3 +576,6 @@ h3{
          width: 100%;
       }
     }
+
+
+   
