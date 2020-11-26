@@ -22,11 +22,8 @@
     </nav>
 
     <div class="icon">
-        <a href="#"><img alt="Qries" src="kurv.png">
+        <a href="#"><img alt="Qries" src="kurv.png"></a>
     </div>
-
-
-
     <button class="knap" onclick="document.getElementById('id01').style.display='block'"><img src="profil.png"></button>
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/action_page.php" method="post">
@@ -55,59 +52,49 @@
 </header>
 
 <body>
-
     <div class="slideshow-container">
-
         <img class="mySlides fade" src="JLR_SV_SalesGrowth1920_ 200520_RR_SPORT_SVR_05copy.jfif" style="width:100%">
-
         <img class="mySlides fade" src="rrevq20mystaticnd22111808copy.jpg" style="width:100%">
-
         <img class="mySlides fade" src="Velar on road (3)copy.jpg" style="width:100%">
-
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
 
 
-    <div class="cars">
-        <div class="grid-container column-2">
-            <div class="carcon">
+    <section class="cars">
+        <section class="grid-container column-2">
+            <figure class="carcon">
                 <img src="Velar on road (3).jpg" alt="">
                 <a class="car btn">Læs mere</a>
-            </div>
-            <div class="carcon">
+            </figure>
+            <figure class="carcon">
                 <img src="rrevq20mystaticnd22111808.jpg" alt="">
                 <a class="car btn">Læs mere</a>
-            </div>
-        </div>
-    </div>
+            </figure>
+        </section>
+    </section>
 
-    <div class="cars">
-        <div class="grid-container column-3">
-            <div class="carcon">
+    <section class="cars">
+        <section class="grid-container column-3">
+            <figure class="car">
                 <img src="Velar on road (3).jpg" alt="">
                 <a class="car btn">Læs mere</a>
-            </div>
-            <div class="carcon">
+            </figure>
+            <figure class="car">
                 <img src="rrevq20mystaticnd22111808.jpg" alt="">
                 <a class="car btn">Læs mere</a>
-            </div>
-            <div class="carcon">
+            </figure>
+            <figure class="car">
                 <img src="rrevq20mystaticnd22111808.jpg" alt="">
                 <a class="car btn">Læs mere</a>
-            </div>
-        </div>
-    </div>s
-
-
-
+            </figure>
+        </section>
+    </section>
 
     <script>
         var slideIndex = 1;
@@ -126,10 +113,10 @@
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
             if (n > slides.length) {
-                slideIndex = 1
+                slideIndex = 1;
             }
             if (n < 1) {
-                slideIndex = slides.length
+                slideIndex = slides.length;
             }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";

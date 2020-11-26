@@ -113,11 +113,11 @@ img {
     grid-column-gap: 5%;
 }
 
-.carcon {
+.car {
     position: relative;
 }
 
-.carcon .car.btn {
+.car .car.btn {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -313,8 +313,12 @@ input[type=password] {
     padding: 0%;
     background: none;
     border: none;
-    padding-top: 0.7rem;
-    padding-right: 1rem;
+    flex: 5%;
+}
+
+.knap img {
+    height: 3.5em;
+    width: auto;
 }
 
 button img {
